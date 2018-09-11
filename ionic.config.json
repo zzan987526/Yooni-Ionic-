@@ -1,5 +1,10 @@
 {
   "name": "YooniProject",
   "integrations": {},
-  "type": "ionic-angular"
+  "type": "ionic-angular",
+
+  "proxies": [{
+    "path": "/api",
+    "proxyUrl": "http://localhost:8080/api"
+  }]
 }

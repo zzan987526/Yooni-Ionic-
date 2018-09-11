@@ -1,3 +1,33 @@
 page-home {
+    .buttons-components-page {
 
+        ion-card {
+          margin-bottom: 2em;
+          height: 55%;
+        }
+      
+        ion-card-content {
+          background-color: #F4F5F8;
+          padding: 0 0;
+          height: 30%;
+        }
+        
+        ion-card .images {
+            height: 58%;
+            overflow: hidden;
+        }
+
+        ion-card img {
+          width: auto;
+        }
+
+        ion-card-title{
+            padding: 3% 5%;
+        }
+
+        ion-card p {
+            padding: 0 5%;
+        }
+      
+      }
 }

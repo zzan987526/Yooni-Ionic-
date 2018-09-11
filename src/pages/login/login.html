@@ -1,0 +1,40 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>登陆到Yooni</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header color="primary">
+      Yooni
+    </ion-card-header>
+    <ion-card-content>
+      <h3 align="center" style="color: red !important;">{{tips}}</h3>
+      <ion-list>
+
+        <ion-item>
+          <ion-label floating>用户名</ion-label>
+          <ion-input type="text" #username></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label floating>密码</ion-label>
+          <ion-input type="password" #password></ion-input>
+        </ion-item>
+      
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <button ion-button full color="primary" (click)="Login(username,password)">登陆</button>
+  <button ion-button full color="secondary">注册</button>
+</ion-content>
