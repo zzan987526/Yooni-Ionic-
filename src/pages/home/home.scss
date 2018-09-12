@@ -10,6 +10,14 @@ page-home {
           background-color: #F4F5F8;
           padding: 0 0;
           height: 30%;
+          p {
+            overflow:hidden;
+            text-overflow:ellipsis; 
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+          }
         }
         
         ion-card .images {

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, IonicPage } from 'ionic-angular';
+import { NavController, IonicPage, PopoverController } from 'ionic-angular';
 import { AppService, AppGlobal } from '../../app/app.service';
 
 @IonicPage()
@@ -9,9 +9,9 @@ import { AppService, AppGlobal } from '../../app/app.service';
 })
 export class HomePage {
   invites : Array<any> = [];
-  constructor(public navCtrl: NavController,public appService: AppService) {
+  constructor(public navCtrl: NavController,public appService: AppService,public popoveCtrl:PopoverController) {
     this.getInvitas();
-    
+
   }
 
   goDetail() {
@@ -28,4 +28,12 @@ export class HomePage {
         this.invites = d;
     })
   }
+
+  popList(event){
+    let popver = this.popoveCtrl.create('template');
+    popver.present({
+      ev: event
+    });
+  }
+
 }

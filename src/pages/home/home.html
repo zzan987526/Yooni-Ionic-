@@ -1,6 +1,11 @@
 <ion-header>
   <ion-navbar color="#66ccff">
     <ion-title>首页</ion-title>
+    <ion-buttons end>
+        <button ion-button icon-only color="royal" (click)="popList($event)">
+          <ion-icon name="person-add"></ion-icon>
+        </button>
+      </ion-buttons>
   </ion-navbar>
 </ion-header>
 
@@ -23,7 +28,7 @@
      </ion-card-content>
       <ion-item>
         <button ion-button clear item-start>{{item.uname}}</button>
-        <button ion-button clear item-end>{{item.destime}}</button>
+        <button ion-button clear item-end style="color:darkgray;" >{{item.destime | date:'yyyy-MM-dd hh:mm:ss'}}</button>
       </ion-item>
   </ion-card>
 </ion-content>
